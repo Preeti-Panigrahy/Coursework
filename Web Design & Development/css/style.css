@@ -1,0 +1,820 @@
+@charset "utf-8";
+/**********************************************************************************
+**********************************************************************************
+								index.html
+
+/**********************************************************************************
+**********************************************************************************/
+body{
+	margin: 0;
+	font-family: calibri;
+	background-image: url('../images/contactBg.jpg');
+	background-size: cover;
+}
+.home,.home1{
+	background-image: url('../images/background.webp');
+	height: max-content;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.pageTitle{
+	background: rgba(0, 0, 0, 0.5);
+	text-align: center;
+	color: yellow;
+	padding: 50px;
+	font-variant: small-caps;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 100px;
+	letter-spacing: 20px;
+}
+#fixed{
+	top: 0;
+	width: 100%;
+}
+.menu{
+	background: #184d47;
+	text-align: center;
+	position: sticky;
+	z-index: 1;
+}
+.menuItems{
+	margin: 0;
+	padding: 0;
+	display: inline;
+}
+.menuIcon{
+	display: none;
+}
+.menuItems li{
+	font-size: 17px;
+	list-style: none;
+	display: inline-block;
+	padding: 25px 25px 26px 25px;
+}
+.aMenu,.aLinks{
+	text-decoration: none;
+	color: white;
+}
+.menuItems li:hover{
+	background: #5b8c5a;
+	transform: scale(1.1);
+}
+.searchBox{
+	border: 1px solid white;
+	border-radius: 50px;
+	background: white;
+	width: max-content;
+	display: inline-block;
+	margin: 20px;
+}
+.searchBox:hover{
+	box-shadow: 0 0 10px 2px #5b8c5b;
+	border: 1px solid #5b8c5a;
+}
+.searchInput{
+	width: 250px;
+	border: none;
+	font-size: 16px;
+	outline: none;
+	background: transparent;
+	margin: 15px 0 0 10px;
+}
+button{
+	background: transparent;
+	border: none;
+	outline: none;
+}
+.container,.dealsContainer{
+	margin: 50px 50px 50px 5%;
+	width: 90%;
+	text-align: center;
+}
+
+.categories,.items:hover{
+	width: max-content;
+	margin: 25px;
+	border: 1px solid #184d47;
+	box-shadow: 0 0 10px 2px#d5d9e9;
+	border-radius: 0 0 50px 50px;
+	display: inline-block;
+}
+.categories:hover{
+	box-shadow: 0 0 10px 3px #184d47;
+}
+.itemImage{
+	height: 200;
+	width: 200px;
+	border-radius: 0 0 50px 50px;
+	padding: 10px;
+}
+a{
+	text-decoration: none;
+}
+.title{
+	padding: 50px;
+	font-size: 50px;
+	font-weight: bold;
+	letter-spacing: 10px;
+	color: white;
+	background: rgba(0, 0, 0, 0.5);
+}
+.deal{
+	padding: 50px;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	display: inline-block;
+	margin: 20px;
+	max-width: 20%;
+	background: linear-gradient(120deg,#16817a 20%, #cee397 50%, #16817a 80%);
+
+}
+.items{
+	display: inline-block;
+}
+.couponBtn{
+	border: 1px solid white;
+	color: white;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 20px;
+}
+.couponBtn:hover{
+	box-shadow: 0 0 10px 5px white inset;
+}
+.images{
+	display: inline-block;
+}
+.imageTitle{
+	color: #000000;
+	font-weight: 700;
+}
+.itemImageSize{
+	height: 200px;
+	width: 300px;
+	padding: 5px;
+}
+.description{
+	min-height: 100px;
+	margin: 20px;
+}
+.itemSelect{
+	margin: 10px 0 0 0;
+}
+.buynowBtn{
+	border: 1px solid #184d47;
+	background:  #184d47;
+	padding: 5px 15px;
+	border-radius: 20px;
+	font-weight: bold;
+	margin-top: 10px;
+	color: white;
+}
+.buynowBtn a{
+	color: #ffffff;
+}
+.buynowBtn:hover{
+	border: 1px solid #5b8c5a;
+	box-shadow: 0 0 10px 5px #5b8c5a inset;
+}
+.home1{
+	background-image: url('../images/footer-background.jpg');
+}
+.footer{
+	background: rgba(0,0,0,0.5);
+	text-align: center;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.quickLinks{
+	color: white;
+	font-size: 20px;
+}
+.quickLinks ul{
+	padding: 0;
+}
+.quickLinks li{
+	list-style: none;
+	padding: 10px;
+	font-weight: 300;
+}
+.aLinks :hover{
+	color: #fd5e53;
+}
+.copyright{
+	font-size: 16px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	text-align: center;
+	background: #000000;
+	color: #ffffff;
+}
+
+/**********************************************************************************
+**********************************************************************************
+								about.html
+/**********************************************************************************
+**********************************************************************************/
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 90vh;
+	width: 85vw;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: 600;
+	margin: 20px auto;
+	z-index: 0;
+}
+.imageAbout{
+	background: url("../images/about.jpg") center/cover no-repeat;
+	margin-right: 20px;
+}
+.aboutContent{
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.aboutContent h2{
+    text-transform: uppercase;
+    font-size: 36px;
+    letter-spacing: 6px;
+    opacity: 0.9;
+}
+.aboutContent span{
+    height: 0.5px;
+    width: 80px;
+    background: #777;
+    margin: 30px 0;
+}
+.aboutContent p{
+    padding-bottom: 15px;
+    font-weight: 300;
+    opacity: 0.7;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+.connections{
+    margin: 15px 0;
+}
+.connections li{
+    border: 0.5px solid #777;
+    list-style: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    width: 160px;
+    text-align: center;
+}
+.connections li a{
+    text-transform: uppercase;
+    color: #777;
+    text-decoration: none;
+}
+.connections li:hover{
+    border-color: #06d6a0;
+}
+.connections li:hover a{
+    color :#f0cd0a;
+}
+.vertical-line{
+    height: 30px;
+    width: 0.5px;
+    background: #777;
+    margin: 0 auto;
+}
+.iconsImage{
+    display: flex;
+    padding: 15px 0;
+}
+.iconsImage li{
+    display: block;
+    padding: 5px;
+    margin: 5px;
+}
+.iconsImage li img{
+	width: 30px;
+	border-radius: 50%;
+    opacity: 0.8;
+}
+.iconsImage li img:hover{
+    box-shadow: 2px #f0cd0a;
+}
+/**********************************************************************************
+**********************************************************************************
+						signup.html & login.html
+
+/**********************************************************************************
+**********************************************************************************/
+.Loginwrapper{
+	overflow: hidden;
+	max-width: 390px; 
+	margin-left: 400px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 30px;
+	border-radius: 5px;
+	box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+	z-index: 1;
+  }
+.Loginwrapper{
+	display: flex;
+	width: 200%;
+}
+.Loginwrapper{
+	width: 50%;
+	font-size: 35px;
+	font-weight: 600;
+	text-align: center;
+	transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.Loginwrapper .slideControls{
+	position: relative;
+	display: flex;
+	height: 50px;
+	width: 100%;
+	overflow: hidden;
+	margin: 30px 0 10px 0;
+	justify-content: space-between;
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+}
+.slideControls .slide{
+	height: 100%;
+	width: 100%;
+	color: #000;
+	font-size: 18px;
+	font-weight: 800;
+	text-align: center;
+	line-height: 48px;
+	cursor: pointer;
+	z-index: 1;
+	transition: all 0.6s ease;
+}
+.slideControls label.signup{
+	color: #000;
+}
+.slideControls{
+	position: absolute;
+	height: 100%;
+	width: 50%;
+	left: 0;
+	z-index: 0;
+	border-radius: 5px;
+	background: linear-gradient(left, #a445b2, #fa4299);
+	transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.Loginwrapper .loginFormContainer{
+	width: 100%;
+	overflow: hidden;
+}
+.loginFormContainer .loginFormInner{
+	display: flex;
+	width: 200%;
+}
+.loginFormContainer .loginFormInner form{
+	width: 50%;
+	transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.loginFormInner form .field{
+	height: 50px;
+	width: 100%;
+	margin-top: 20px;
+}
+.loginFormInner form .field input{
+	height: 100%;
+	width: 100%;
+	outline: none;
+	padding-left: 15px;
+	border-radius: 5px;
+	border: 1px solid lightgrey;
+	border-bottom-width: 2px;
+	font-size: 17px;
+	transition: all 0.3s ease;
+}
+.loginFormInner form .field input:focus{
+	border-color: #0e0107;
+}
+.loginFormInner form .field input::placeholder{
+	color: #999;
+	transition: all 0.3s ease;
+}
+form .field input:focus::placeholder{
+	color: #b3b3b3;
+}
+.loginFormInner form .passLink{
+	margin-top: 5px;
+}
+.loginFormInner form .signupLink{
+	text-align: center;
+	margin-top: 30px;
+	font-size: 12px;
+}
+.loginFormInner form .passLink a,
+.loginFormInner form .signupLink a{
+	color: #f70606;
+	font-weight: 700;
+	font-size: 12px;
+	text-decoration: none;
+}
+.loginFormInner form .passLink a:hover,
+.loginFormInner form .signupLink a:hover{
+	text-decoration: underline;
+}
+form .btn{
+	height: 50px;
+	width: 100%;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+}
+form .btn .btn-layer{
+	height: 100%;
+	width: 300%;
+	position: absolute;
+	left: -100%;
+	background: -webkit-linear-gradient(right, #5bb245, #95fa42, #45b24e, #8cfa42);
+	border-radius: 5px;
+	transition: all 0.4s ease;;
+}
+form .btn:hover .btn-layer{
+	left: 0;
+}
+form .btn input[type="submit"]{
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	position: relative;
+	background: none;
+	border: none;
+	color: #fff;
+	padding-left: 0;
+	border-radius: 5px;
+	font-size: 20px;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+
+/**********************************************************************************
+**********************************************************************************
+								myCart.html
+
+/**********************************************************************************
+**********************************************************************************/	
+
+.myCart {
+	width: 750px;
+	height: 423px;
+	margin-top: 80px;
+	margin-left: 30px;
+	background: #FFFFFF;
+	box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+	border-radius: 6px;
+	display: flex;
+	flex-direction: column;
+  }
+.start{
+	margin-bottom: -290px;
+}
+  .cartTitle {
+	height: 60px;
+	border-bottom: 1px solid #E1E8EE;
+	padding: 20px 30px;
+	color: #5E6977;
+	font-size: 18px;
+	font-weight: bolder;
+	text-align: center;
+  }
+   
+  .cartItem {
+	padding: 20px 30px;
+	height: 120px;
+	display: flex;
+  }
+   
+  .cartItem:nth-child(3) {
+	border-top:  1px solid #E1E8EE;
+	border-bottom:  1px solid #E1E8EE;
+  }
+  .cartButtons {
+	position: relative;
+	padding-top: 30px;
+	margin-right: 60px;
+  }
+  .deleteBtn,
+  .likeBtn {
+	display: inline-block;
+	Cursor: pointer;
+  }
+  .deleteBtn {
+	width: 18px;
+	height: 17px;
+	background: no-repeat center;
+  }
+   
+  .likeBtn {
+	position: absolute;
+	top: 9px;
+	left: 15px;
+	width: 60px;
+	height: 60px;
+	background-size: 2900%;
+	background-repeat: no-repeat;
+  }
+  .is-active {
+	animation-name: animate;
+	animation-duration: .8s;
+	animation-iteration-count: 1;
+	animation-timing-function: steps(28);
+	animation-fill-mode: forwards;
+  }
+   
+  @keyframes animate {
+	0%   { background-position: left;  }
+	50%  { background-position: right; }
+	100% { background-position: right; }
+  }
+  .cartImage {
+	margin-right: 50px;
+  }
+  .cartImage img{
+	  width: 90px;
+	  height: 80px;
+  } 
+  
+  .cartDescription {
+	padding-top: 10px;
+	margin-right: 60px;
+	width: 115px;
+  }
+   
+  .cartDescription span {
+	display: block;
+	font-size: 14px;
+	color: #43484D;
+	font-weight: 400;
+  }
+   
+  .cartDescription span:first-child {
+	margin-bottom: 5px;
+  }
+  .cartDescription span:last-child {
+	font-weight: 300;
+	margin-top: 8px;
+	color: #86939E;
+  }
+  .cartQuantity {
+	padding-top: 20px;
+	margin-right: 60px;
+  }
+  .cartQuantity input {
+	-webkit-appearance: none;
+	border: none;
+	text-align: center;
+	width: 32px;
+	font-size: 16px;
+	color: #43484D;
+	font-weight: 300;
+  }
+   
+  button[class*=btn] {
+	width: 30px;
+	height: 30px;
+	background-color: #E1E8EE;
+	border-radius: 6px;
+	border: none;
+	cursor: pointer;
+  }
+  .minusBtn img {
+	margin-bottom: -1px;
+	width: 20px;
+  }
+  .plusBtn img {
+	margin-top: 6px;
+	width: 20px;
+  }
+   
+  button:focus,
+  input:focus {
+	outline:0;
+  }
+  .cartQuantity {
+	padding-top: 20px;
+	margin-right: 60px;
+  }
+  .cartQuantity input {
+	border: none;
+	text-align: center;
+	width: 32px;
+	font-size: 16px;
+	color: #43484D;
+	font-weight: 300;
+  }
+   
+  button[class*=btn] {
+	width: 30px;
+	height: 30px;
+	background-color: #E1E8EE;
+	border-radius: 6px;
+	border: none;
+	cursor: pointer;
+  }
+  button:focus,
+  input:focus {
+	outline:0;
+  }
+.cartTotalBuy{
+	margin-left: 800px;
+	width: 400px;
+	height: 200px;
+	margin-bottom: 145px; 
+}
+.cartTotalBuy table tr td:nth-child(1){
+	font-weight: bolder;
+}
+.note{
+	color: blue;
+	padding: 2px;
+	text-align: center;
+	font-weight: bold;
+}
+  @media (max-width: 800px) {
+	.myCart {
+	  width: 90%;
+	  height: auto;
+	  overflow: hidden;
+	}
+	.cartItem {
+	  height: auto;
+	  flex-wrap: wrap;
+	  justify-content: center;
+	}
+	.cartImage img {
+	  width: 50%;
+	}
+	.cartImage,
+	.cartQuantity,
+	.cartDescription {
+	  width: 100%;
+	  text-align: center;
+	  margin: 6px 0;
+	}
+	.cartButtons {
+	  margin-right: 20px;
+	}
+	.cartTotalBuy{
+		margin-left: 30px;
+		margin-bottom: 20px;
+		margin-top: 340px;
+	}
+  }
+
+/**********************************************************************************
+**********************************************************************************
+								contact.html
+
+/**********************************************************************************
+**********************************************************************************/
+.contactSection{
+	background: url('../images/contactBg.jpg') no-repeat center;
+	background-size: cover;
+	padding: 40px 0;
+}
+.contactSection h1{
+	text-align: center;
+	color: #000000;
+}
+.contactBox{
+	width: 100px;
+	height: 10px;
+	background: #34495e;
+	margin: 40px auto;
+}
+.contactForm{
+	max-width: 600px;
+	margin: auto;
+	padding: 0 10px;
+	overflow: hidden;
+}
+.contactFormText{
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	margin: 16px 0;
+	border: 0;
+	background: #111;
+	padding: 20px 40px;
+	outline: none;
+	color: #ddd;
+	transition: 0.5s;
+}
+.contactFormText:focus{
+	box-shadow: 0 0 10px 4px #34495e;
+}
+textarea.contactFormText{
+	resize: none;
+	height: 120px;
+}
+  .contactFormBtn{
+	float: right;
+	border: 0;
+	background: #34495e;
+	color: #fff;
+	padding: 12px 50px;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.contactFormBtn:hover{
+	background: #2980b9;
+}
+  
+
+
+
+/**********************************************************************************
+**********************************************************************************
+						 		responsive
+
+/**********************************************************************************
+**********************************************************************************/
+
+/**********************************************************************************
+								index.html
+**********************************************************************************/
+@media screen and (max-width: 500px) {
+	.pageTitle{
+		font-size: 23px;
+		font-weight: bold;
+		margin-left: -64px;
+	}
+	.menu{
+		display: none
+	}
+	.menuIcon{
+		display: block;
+		width: 30px;
+		margin-left: 450px;
+		margin-top: -30px;
+	}
+	.deal{
+		max-width: 350px;
+	}
+}
+
+/**********************************************************************************
+								about.html
+**********************************************************************************/
+@media(max-width: 992px){
+    section{
+        grid-template-columns: 1fr;
+		width: 90%;
+    }
+    .image{
+        height: 300px;
+    }
+    .aboutContent{
+		margin-top: 10px;
+        height: 100vh;
+    }
+    .aboutContent h2{
+        font-size: 20px;
+        margin-top: 50px;
+    }
+    .aboutContent span{
+        margin: 20px 0;
+    }
+    .aboutContent p{
+        font-size: 14px;
+    }
+    .connections li a{
+        font-size: 14px;
+    }
+    .connections{
+        margin: 5px 0;
+    }
+    .connections li{
+        padding: 6px 10px;
+    }
+}
+/**********************************************************************************
+							signup.html & login.html
+**********************************************************************************/
+@media screen and (max-width: 500px) {
+	.Loginwrapper{
+		margin-left: 80px;
+	}
+}
+
+
+
+
+
+
+
